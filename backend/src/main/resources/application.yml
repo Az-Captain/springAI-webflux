@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springai-webflux
+  webflux:
+    base-path: /
+  codec:
+    max-in-memory-size: 10MB
+
+deepseek:
+#  api-url: https://openrouter.ai/api/v1/chat/completions
+#  api-key: you-apikey
+#  api-url: https://api.deepseek.com
+#  api-key: you-apikey
+  api-url: https://api.siliconflow.cn/v1/chat/completions
+  api-key: yourapikey
+
+logging:
+  level:
+    com.az.springaiwebflux: DEBUG
+    org.springframework.web: INFO
